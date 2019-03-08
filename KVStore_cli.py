@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Run the CLI with python3
+Run the CLI with python
 Enter command:
     get <key>s
     put <key> <value>
@@ -19,7 +19,7 @@ Enter command:
 >>> """
 
 while True:
-    command = input(msg)
+    command = raw_input(msg)
     if command:
         out = command.split()
         if out[0] == 'get' and len(out) == 2:
@@ -28,7 +28,7 @@ while True:
             if resp.status_code in [200, 202]:
             	print (resp.text)
             else:
-            	print (f'GET failed - {resp} - {resp.text}')
+            	print (f'GET failed - ' + resp + ' - ' + resp.text)
         elif out[0] == 'put' and len(out) == 3:
             headers = {'content-type': 'application/json'}
             json_data = '{"key" : "' + out[1] + '", "value" : "' + out[2] +'"}'
@@ -36,7 +36,7 @@ while True:
             if resp.status_code in [200, 202]:
             	print (resp.text)
             else:
-            	print (f'PUT failed - {resp} - {resp.text}')
+            	print (f'PUT failed - ' + resp + ' - ' + resp.text)
         elif out[0].lower() == "exit":
         	session.close()
         	break
