@@ -15,7 +15,7 @@ Project Setup and running :
 Running CLI :
   1. KVStore_cli.py is script to run CLI. 
      It is built on python 3, so make sure you installed python3 and install "requests" package for python3
-     Follow - https://realpython.com/installing-python/ for installing python3
+     Follow - https://www.python.org/downloads/ or https://realpython.com/installing-python/ for installing python3
      Follow - https://docs.python.org/3/installing/index.html for installing "requests" package
      Note: "requests" is used to make get and put calls.
   2. Run following command to run CLI
