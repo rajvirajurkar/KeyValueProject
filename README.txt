@@ -19,7 +19,7 @@ Running CLI :
      Follow - https://docs.python.org/3/installing/index.html for installing "requests" package
      Note: "requests" is used to make get and put calls.
   2. Run following command to run CLI
-      python3 KVStore_cli.py
+      python KVStore_cli.py
   3. It prompt for following options
       Enter command:
         get <key>
