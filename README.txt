@@ -1,4 +1,4 @@
-Title : Key Value store
+Title : Key Value store Web service
 author: Rajvi Rajurkar
 
 ========================================================================================
